@@ -61,6 +61,7 @@ jobs:
       - name: Create mobile build session
         run: |
           echo "Create mbs file..."
+          sourceanalyzer -b $BUILD_ID -show-files
           sourceanalyzer -b $BUILD_ID -export-build-session $BUILD_ID.mbs
           echo "Zip mbs file..."
           zip -9mq package.zip ${BUILD_ID}.mbs

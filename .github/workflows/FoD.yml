@@ -65,7 +65,7 @@ jobs:
           echo "Zip mbs file..."
           zip -9mq package.zip ${BUILD_ID}.mbs
         env:
-          BUILD_ID: "play-webgoat"
+          BUILD_ID: "myproject"
 
       # Start Fortify on Demand SAST scan. Be sure to set secrets/variables for your desired configuration.
       - name: Download Fortify on Demand Universal CI Tool
